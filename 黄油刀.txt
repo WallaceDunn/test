@@ -1,0 +1,11 @@
+在项目的build.gradle中添加如下：
+ dependencies {
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    }
+
+在app的build.gradle中添加如下：
+在抬头添加
+apply plugin: 'com.neenbedankt.android-apt'
+在结尾添加
+compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
